@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+
+    <!-- font awesome -->
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+
+    <title>A11</title>
+    <!-- <link rel="stylesheet" href="./11Ass.css"> -->
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col-6">
+                <canvas id="myChart" width="400" height="400"></canvas>
+            </div>
+
+            <div class="col-6">
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var data = {
+  "labels": [
+    "Data1",
+    "Data2",
+    "Data3",
+    "Data4",
+    "Data5",
+    "Data6",
+    "Data7"
+  ],
+  "datasets": [
+    {
+      "label": "Category1",
+      "backgroundColor": "#000000",
+      "fill": false,
+      "data": [
+        "20",
+        "30",
+        "80",
+        "20",
+        "40",
+        "10",
+        "60"
+      ],
+      "borderColor": "#ff9300",
+      "pointRadius": "10",
+      "pointBackgroundColor": "#945200",
+      "pointBorderColor": "#ff9300",
+      "lineTension": 0.9,
+      "pointBorderWidth": 5,
+      "pointHoverBackgroundColor": "#ff9300",
+      "pointHoverBorderColor": "#945200"
+    },
+    {
+      "label": "Category2",
+      "backgroundColor": "",
+      "fill": false,
+      "data": [
+        "60",
+        "10",
+        "40",
+        "30",
+        "80",
+        "30",
+        "40"
+      ],
+      "borderColor": "#73fa79",
+      "pointRadius": "10",
+      "lineTension": 0,
+      "pointBackgroundColor": "#008f00",
+      "pointBorderColor": "#73fa79",
+      "pointBorderWidth": 5
+    }
+  ]
+};
+    var options = {
+  "title": {
+    "display": false
+  },
+  "legend": {
+    "display": true
+  },
+  "scales": {
+    "yAxes": [
+      {
+        "ticks": {
+          "beginAtZero": true
+        },
+        "gridLines": {
+          "display": true,
+          "lineWidth": 1,
+          "drawOnChartArea": true,
+          "color": "#000000",
+          "zeroLineColor": "#000000",
+          "zeroLineWidth": 1,
+          "drawTicks": true
+        }
+      }
+    ],
+    "xAxes": {
+      "0": {
+        "gridLines": {
+          "drawOnChartArea": false,
+          "offsetGridLines": false,
+          "zeroLineColor": "#000000",
+          "display": true,
+          "lineWidth": 2,
+          "drawTicks": true,
+          "zeroLineWidth": 2,
+          "color": "#000000"
+        },
+        "ticks": {
+          "display": true,
+          "beginAtZero": true
+        }
+      }
+    }
+  },
+  "elements": {
+    "line": {
+      "borderColor": "#000000",
+      "lineTension": 0
+    }
+  }
+};
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script> -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script> -->
+
+</body>
+
+</html>

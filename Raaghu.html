@@ -1,0 +1,957 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <!-- font awesome -->
+  <!--   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+  <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+
+
+  <title>Assignment-11</title>
+  <link rel="stylesheet" href="./11Ass.css">
+
+
+
+</head>
+
+
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light"
+    style="background-color: #191B29;  z-index: 1; position: sticky; top: 0%;">
+    <a class="navbar-brand" href="#"><img src="raaghu.png" class="img-fluid" alt=""></a>
+
+    <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: #191B29;">Linkkkkkkkkkkkk</a>
+        </li>
+
+        <li class="nav-item">
+          <span style="font-size: larger; color: #FFFFFF;"> Dashboard</span><br>
+          <span style="color: #C7C7C7;">Statistics and reports</span>
+        </li>
+
+      </ul>
+
+
+      <form class="form-inline my-2 my-lg-0">
+        <!-- <button type="button" class="btn btn-md mr-4"><img src="kgf3.png" class="img-fluid" alt=""><span class=""><a
+              class="text-white">&nbsp;&nbsp; EN(UK) &nbsp;&nbsp;<i
+                class=" text-white bi bi-chevron-down"></i></a></span></button> -->
+
+        <button type="button" class="btn btn-md mr-4 dropdown-toggle " data-toggle="dropdown" aria-expanded="false">
+          <img src="kgf3.png" class="img-fluid" alt=""><span class=""><a
+              class="text-white text-decoration-none">&nbsp;&nbsp; EN(UK)
+              &nbsp;&nbsp;<i class=" text-white bi bi-chevron-down"></i></a></span>
+        </button>
+        <div class="dropdown-menu dropdown-menu-left" style="margin-left: 64%; width: 15%; background-color: #A2AAC9">
+          <button class="dropdown-item" style="color: #1332805c;" type="button"><img class="mt-2 mb-2 mr-3 text-white"
+              src="f1.png" width="35" alt="">Deutsch</button>
+          <button class="dropdown-item" style="color: #1332805c;" type="button"><img class="mt-2 mb-2 mr-3 text-white"
+              src="f2.png" width="35" alt="">Dutch (Nederlands)</button>
+          <button class="dropdown-item" style="color: #1332805c;" type="button"><img class="mt-2 mb-2 mr-3 text-white"
+              src="f3.png" width="35" alt="">English (Default)</button>
+          <button class="dropdown-item" style="color: white; background-color: #42465a;" type="button"><img
+              class="mt-2 mb-2 mr-3" src="f4.png" width="35" alt="">English (UK)<span class="float-right"><i
+                class="bi bi-check2 " style="color: #78F7B8;"></i></span></button>
+          <button class="dropdown-item" style="color: #1332805c;" type="button"><img class="mt-2 mb-2 mr-3 text-white"
+              src="f5.png" width="35" alt="">Espanol (Mexico)</button>
+          <button class="dropdown-item" style="color: #1332805c;" type="button"><img class="mt-2 mb-2 mr-3 text-white"
+              src="f6.png" width="35" alt="">Espanol (Spanish)</button>
+          <button class="dropdown-item" style="color: #1332805c;" type="button"><img class="mt-2 mb-2 mr-3 text-white"
+              src="f7.png" width="35" alt="">Francais (French)</button>
+          <button class="dropdown-item" style="color: #1332805c;" type="button"><img class="mt-2 mb-2 mr-3 text-white"
+              src="f8.svg" width="35" alt="">Italiano (Italian)</button>
+          <button class="dropdown-item" style="color: #1332805c;" type="button"><img class="mt-2 mb-2 mr-3 text-white"
+              src="f9.png" width="35" alt="">Portugues (Brasil)</button>
+          <button class="dropdown-item" style="color: #1332805c;" type="button"><img class="mt-2 mb-2 mr-3 text-white"
+              src="f10.png" width="35" alt="">PycckNN (Russion)</button>
+          <button class="dropdown-item" style="color: #1332805c;" type="button"><img class="mt-2 mb-2 mr-3 text-white"
+              src="f11.jpg" width="35" alt="">Tieng Viet (Vietnamese)</button>
+          <button class="dropdown-item" style="color: #1332805c;" type="button"><img class="mt-2 mb-2 mr-3 text-white"
+              src="f12.png" width="35" alt="">Turkce (Turkish)</button>
+          <button class="dropdown-item" style="color: #1332805c;" type="button"><img class="mt-2 mb-2 mr-3 text-white"
+              src="f13.jpg" width="35" alt="">العربية (Arabic)</button>
+          <button class="dropdown-item" style="color: #1332805c;" type="button"><img class="mt-2 mb-2 mr-3 text-white"
+              src="f14.png" width="35" alt="">แบบไทย (Thai)</button>
+          <button class="dropdown-item" style="color: #1332805c;" type="button"><img class="mt-2 mb-2 mr-3 text-white"
+              src="f15.png" width="35" alt="">中文和它 (Chinese)</button>
+        </div>
+
+        <span class="text-white mr-4 text-muted" style="font-size:larger;">|</span>
+        <img class="mr-4 " src="bell.png" class="img-fluid" alt="" style="width: 26px;">
+        <span class="text-white mr-4 text-muted" style="font-size:larger;">|</span>
+        <span><i class="text-white mr-4 bi bi-gear" style="font-size: 23px;"></i></span>
+        <span class="text-white mr-4 text-muted" style="font-size:larger;">|</span>
+        <img src="promax.png" class="img-fluid" alt="">
+
+        <button type="button" class="btn btn-md" data-toggle="modal" data-target="#exampleModal">
+          <div> <span class=""><a class="text-white text-decoration-none">Host Admin <br><span
+                  class="font-weight-light">Keanu
+                  Faster</span></a></span></div>
+          <button type="button" class="btn btn-sm btn-sm" data-toggle="modal" data-target="#exampleModal"><i
+              class="text-white bi bi-chevron-down"></i></button>
+        </button>
+
+
+
+
+      </form>
+
+    </div>
+  </nav>
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-2  co-sm-12 p1 " style="background-color: #12141F; ">
+
+
+
+
+        <div class="sidebar  border-right border-dark" style="position: fixed;">
+
+
+          <a class="text-white" href="#home"><img src="d1.png" alt="">
+            &nbsp; DASHBOARD</a>
+          <a class="text-white" href="#news"><img src="d2.png" alt=""> &nbsp;
+            TENANTS</a>
+          <a class="text-white" href="#contact"><img src="d3.png" alt="">&nbsp; &nbsp;
+            EDITIONS</a>
+          <a class="text-white" href="#about"><img src="d4.png" alt=""> &nbsp;
+            ADMINISTRATION</a>
+          <a class="text-white" href="#about"><img src="d5.png" alt="">&nbsp;
+            &nbsp; UI COMPONENTS</a>
+
+          <div class="footer" style="margin-top: 24%;">
+            <p class="" style="margin-left: 5%; "><img class="foot1" src="grds.png" alt=""></p>
+
+
+            <!-- <p class="text-center1 mt-4" style="margin-left: 2%;"><img class="img-fluid" src="led.png" alt=""></p> -->
+
+            <label class="toggleSwitch nolabel ml-4 mt-4" onclick="">
+              <input type="checkbox" class="checkbox" id="checkbox" checked />
+              <a></a>
+              <span>
+                <span class="left-span"><i class="bi bi-brightness-high"></i>&nbsp; Light</span>
+                <span class="right-span"><i class="bi bi-moon"></i>&nbsp; Dark</span>
+              </span>
+            </label>
+
+
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <!--  -->
+      <div class="col-md-12 col-lg-10  " style="background-color: #12141F">
+
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <span class="text-white">Hello,Keanu Foster!</span>
+          </div>
+          <div class="col-md-6">
+            <span class="float-right">
+              <button type="button" class="btn btn-md text-white" style="border-color: white;">EDIT MODE</button>
+              <button type="button" class="btn btn-md text-white" style=" background-color: #27CDFD;"><i
+                  class="bi bi-calendar-date"></i>&nbsp; FILTER BY DATE</button>
+            </span>
+          </div>
+        </div>
+        <!--line chart  -->
+        <div class="row mt-4">
+          <div class="col-md-6 ">
+            <div class="card h-100"
+              style="width: 100%; border-radius:10px; background-color: #161618; border-color: #3C3E47;">
+              <div class="card-body">
+                <h5 class="card-title ml-4" style="color: #F5F7FE;">Monthly Summary</h5>
+                <div class="row">
+                  <!-- <canvas class="" id="myChart"></canvas> -->
+                  <canvas id="myChart" height="120"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-3 col-sm-12 col-xs-12">
+
+            <div class="card h-100" style="width: 100%; border: none; background-color: #12141F;">
+              <div class="card-body p-0 m-0">
+
+                <div class="card" style="border-radius:10px; background-color: #161618; border-color: #3C3E47;">
+                  <div class="card-body">
+                    <p style="color: #F5F7FE;">Sales</p>
+                    <p class="mt-n1 text-white" style="font-size: xx-large;"><b>$32,230.00</b></p>
+                    <p class="mt-n1 " style="color: #78F7B8;"><i class="bi bi-caret-up-fill"></i>+$2,203,00</p>
+                  </div>
+                </div>
+
+                <div class="card  mt-5" style="border-radius: 10px; background-color: #5800D3; border-color: #3C3E47;">
+                  <div class="card-body">
+                    <p style="color: #F5F7FE;">Revenue</p>
+                    <p class="mt-n1 text-white" style="font-size: xx-large;"><b>$9,72,900.00</b></p>
+                    <p class="mt-n1" style="color: #FFD97A;"><i class="bi bi-caret-down-fill"
+                        style="color: #FFD97A;"></i>-$39,330,00</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-3">
+            <div class="card h-100" style="width: 100%; border-color: #3C3E47;  background-color: #161618;">
+              <div class="card-body">
+                <img class="float-right" src="refresh.png" alt="">
+                <h5 class="card-title mt-n1" style="color: #F5F7FE;">Profit Share</h5>
+                <p class="mt-n1 text-white" style="font-size: xx-large;"><b>$73,960.41</b></p>
+
+                <div class="row">
+
+                  <canvas id="myChart11"
+                    style="margin-left: -25%; margin-top: 8%; width: 110%; height: 210px;"></canvas>
+
+                  <span class="lg" style="margin-top: 19%; margin-left: -20%; color: #FFFFFF;">
+
+                    <span class="dot"
+                      style="height: 15px; width: 15px; background-color: #0085D3; display: inline-block;"></span>
+                    &nbsp;Total Sales-60%<br>
+
+                    <span class="dot mt-4"
+                      style="height: 15px; width: 15px; background-color: #BF00BB; display: inline-block;"></span>
+                    &nbsp;Revenue-25% <br>
+
+                    <span class="dot mt-4"
+                      style="height: 15px; width: 15px; background-color: #7E2EEF; display: inline-block;"></span>
+                    &nbsp;Expenses-15%
+
+                  </span>
+
+
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+
+
+        <!-- doughnut  chart -->
+        <script type="text/javascript">
+          window.onload = function () {//from  w ww  .  j a v  a  2  s.com
+            var data = {
+              labels: [
+                "Total Sales-60%",
+                "Revenue-25%",
+                "Expenses-15%"
+              ],
+              datasets: [
+                {
+                  data: [60, 25, 15],
+                  backgroundColor: [
+                    "#0085D3",
+                    "#BF00BB",
+                    "#7E2EEF"
+                  ],
+                  "borderColor": "#161618",
+                  hoverBackgroundColor: [
+                    "#0085D3",
+                    "#BF00BB",
+                    "#7E2EEF"
+                  ]
+
+                }]
+            };
+            var promisedDeliveryChart = new Chart(document.getElementById('myChart11'), {
+              type: 'doughnut',
+              data: data,
+              options: {
+                responsive: true,
+                cutoutPercentage: 82,
+                legend: {
+                  display: false
+                }
+              }
+            });
+            // Chart.pluginService.register({
+            //   beforeDraw: function (chart) {
+            //     var width = chart.chart.width,
+            //       height = chart.chart.height,
+            //       ctx = chart.chart.ctx;
+            //     ctx.restore();
+            //     var fontSize = (height / 114).toFixed(2);
+            //     ctx.font = fontSize + "em sans-serif";
+            //     ctx.textBaseline = "middle";
+            //     var text = "35K Profit",
+
+            //       textX = Math.round((width - ctx.measureText(text).width) / 2),
+            //       textY = height / 2;
+            //     ctx.fillText(text, textX, textY);
+            //     ctx.save();
+
+            //   }
+            // });
+
+          }
+
+        </script>
+        <!--  -->
+
+
+        <div class="row mt-4">
+
+          <div class="col-md-3">
+
+            <div class="card h-100" style="width: 100%; border: none; background-color: #12141F;">
+              <div class="card-body p-0 m-0">
+
+                <div class="card" style="border-radius:10px; background-color: #161618; border-color: #3C3E47;">
+                  <div class="card-body">
+                    <h5 class="card-title ml-1" style="color: #F5F7FE;">Call Overview</h5>
+                    <div class="row">
+                      <img class="mt-3" src="hphone.png" class="ml-2 img-fluid" alt="..."
+                        style="width: 95px; height: 95px;">
+                      <div>
+                        <p class="mcr1 ml-lg-4  ">
+                        <p class=" ml-3 text-white" style="font-size: xx-large;"><b>97.5%</b></p>
+                        <p class=" ml-3  text-white"></i>Total Calls Connected</p>
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <img class="mt-3" src="dpro.png" class="ml-2 img-fluid" alt="..."
+                        style="width: 95px; height: 95px;">
+                      <div>
+                        <p class="mcr1 ml-lg-4  ">
+                        <p class=" ml-3 text-white" style="font-size: xx-large;"><b>34,502</b></p>
+                        <p class=" ml-3  text-white"></i>Total Calls Connected</p>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mt-5" style="border-radius:10px; background-color: #161618; border-color: #3C3E47;">
+                  <div class="card-body">
+                    <p style="color: #F5F7FE;">Sales</p>
+                    <p class="mt-n1 text-white" style="font-size: xx-large;"><b>$32,230.00</b></p>
+                    <p class="mt-n1" style="color: #78F7B8;"><i class="bi bi-caret-up-fill"></i>+$2,203,00</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-3">
+            <div class="card h-100" style="width: 100%; border-color: #3C3E47; background-color: #161618;">
+              <div class="card-body">
+                <img class="float-right" src="refresh.png" alt="">
+                <h5 class="card-title mt-n1" style="color: #F5F7FE;">Daily Sales Growth</h5>
+                <p class="mt-n1 text-white" style="font-size: xx-large;"><b>$3,73,960.403</b></p>
+                <p class="mt-n1" style="color: #F76161;"><i class="bi bi-caret-down-fill"></i>+$2,203,00</p>
+
+                <canvas id="my_chart" width="400" height="500"></canvas>
+
+              </div>
+            </div>
+          </div>
+
+          <script>
+            var ctx = document.getElementById('my_chart').getContext('2d');
+            var my_chart = new Chart(ctx, {
+              type: 'bar',
+              data: {
+                labels: ['0', '.', '.', '.', '.', '10K', '.', '.', '.', '.', '20K', '.', '.', '.', '.', '30K', '.', '40K'],
+                datasets: [{
+                  label: 'Months',
+                  data: [80, 49, 67, 90, 60, 70, 80, 85, 80, 90, 60, 70, 44, 67, 87, 90, 58, 83],
+                  backgroundColor: '#2EAEEF',
+                  borderColor: '#2EAEEF',
+                  borderWidth: 2,
+                  barThickness: 30,
+                  borderRadius: 50,
+                  responsive: true,
+                  legend: false
+                }]
+
+              },
+              options: {
+                scales: {
+                  y: {
+                    beginAtZero: true
+                  }
+                }
+              }
+            });
+          </script>
+
+
+          <div class="col-md-6">
+            <div class="card h-100 mb-n4" style="width: 100%; border-color: #3C3E47; background-color: #1D1E21;">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-6">
+                    <h5 class="card-title mt-n1 ml-2" style="color: #F5F7FE;">Member Activity</h5>
+                  </div>
+                  <div class="col-6">
+                    <img class="float-right" src="refresh.png" alt="">
+                  </div>
+                </div>
+
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col" style="color: #FFFFFF;border-top: none;">Member</th>
+                        <th scope="col" style="color: #FFFFFF;border-top: none;">Cases</th>
+                        <th scope="col" style="color: #FFFFFF;border-top: none;">Active</th>
+                        <th scope="col" style="color: #FFFFFF;border-top: none;">Closed</th>
+                        <th scope="col" style="color: #FFFFFF;border-top: none;">Rate</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+
+                        <td>
+                          <div class="row">
+                            <!-- <div class="col-2">
+                              <img src="ti1.png" alt="">
+                            </div>
+                            <div class="col-10" style="color: #FFFFFF;">
+                              <span style="font-weight: bold;"> Brian</span><br><span style="color: #B4BFCC;">Software
+                                Developer</span>
+                            </div> -->
+                            <img class="ml-4" src="css1.png" alt="" style="width: 250px;">
+                          </div>
+                        </td>
+
+                        <td style="color: #B4BFCC;">75</td>
+                        <td style="color: #B4BFCC;">36</td>
+                        <td style="color: #B4BFCC;">36</td>
+                        <td style="color: #9EFCB0;">92%</td>
+                      </tr>
+                      <tr>
+
+                        <td>
+                          <!-- <div class="row">
+                            <div class="col-2">
+                              <img src="ti2.png" alt="">
+                            </div>
+                            <div class="col-10" style="color: #FFFFFF;">
+                              <span style="font-weight: bold;"> Jane</span><br><span style="color: #B4BFCC;">Senor
+                                Manager</span>
+                            </div>
+                          </div> -->
+                          <img class="ml-1" src="css2.png" alt="" style="width: 250px;">
+                        </td>
+
+                        <td style="color: #B4BFCC;">29</td>
+                        <td style="color: #B4BFCC;">34</td>
+                        <td style="color: #B4BFCC;">34</td>
+                        <td style="color: #FFD97A;">46%</td>
+                      </tr>
+                      <tr>
+
+                        <td>
+                          <!-- <div class="row">
+                            <div class="col-2">
+                              <img src="ti3.png" alt="">
+                            </div>
+                            <div class="col-10" style="color: #FFFFFF;">
+                              <span style="font-weight: bold;"> Tim</span><br><span style="color: #B4BFCC;">Sales
+                                Executive</span>
+                            </div>
+                          </div> -->
+                          <img class="ml-1" src="css3.png" alt="" style="width: 250px;">
+                        </td>
+
+                        <td style="color: #B4BFCC;">38</td>
+                        <td style="color: #B4BFCC;">104</td>
+                        <td style="color: #B4BFCC;">104</td>
+                        <td style="color: #EFAD07;">16%</td>
+                      </tr>
+                      <tr>
+
+                        <td>
+                          <!-- <div class="row">
+                            <div class="col-2">
+                              <img src="ti4.png" alt="">
+                            </div>
+                            <div class="col-10" style="color: #FFFFFF;">
+                              <span style="font-weight: bold;"> Kate</span><br><span
+                                style="color: #B4BFCC;">Manager</span>
+                            </div>
+                          </div> -->
+                          <img class="ml-1" src="css4.png" alt="" style="width: 250px;">
+                        </td>
+
+                        <td style="color: #B4BFCC;">96</td>
+                        <td style="color: #B4BFCC;">93</td>
+                        <td style="color: #B4BFCC;">93</td>
+                        <td style="color: #F76161;">30%</td>
+                      </tr>
+                      <tr>
+
+                        <td>
+                          <!-- <div class="row">
+                            <div class="col-2">
+                              <img src="ti5.png" alt="">
+                            </div>
+                            <div class="col-10" style="color: #FFFFFF;">
+                              <span style="font-weight: bold;"> Brian</span><br><span style="color: #B4BFCC;">Software
+                                Developer</span>
+                            </div>
+                          </div> -->
+                          <img class="ml-1" src="css5.png" alt="" style="width: 250px;">
+                        </td>
+
+                        <td style="color: #B4BFCC;">72</td>
+                        <td style="color: #B4BFCC;">36</td>
+                        <td style="color: #B4BFCC;">36</td>
+                        <td style="color: #9EFCB0;">92%</td>
+                      </tr>
+                      <tr>
+
+                        <td>
+                          <!-- <div class="row">
+                            <div class="col-2">
+                              <img src="ti6.png" alt="">
+                            </div>
+                            <div class="col-10" style="color: #FFFFFF;">
+                              <span style="font-weight: bold;"> Jane</span><br><span style="color: #B4BFCC;">Senior
+                                Manager</span>
+                            </div>
+                          </div> -->
+                          <img class="ml-1" src="css6.png" alt="" style="width: 250px;">
+                        </td>
+
+                        <td style="color: #B4BFCC;">29</td>
+                        <td style="color: #B4BFCC;">34</td>
+                        <td style="color: #B4BFCC;">34</td>
+                        <td style="color: #FFD97A;">46%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!--  -->
+
+
+
+      </div>
+      <!-- footer -->
+
+      <div class="card" style="width: 100%; background-color: #12141F; border: none;">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-2">
+
+            </div>
+            <div class="col-10">
+              <div class="footer">
+                <p style="color: #A2AAC9;">ANZAngular105Demo Standard | API:v10.5.0 | Client: v10.5.0 [20211115]</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!--  -->
+
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script>
+      var xValues = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1001, 1005];
+
+      new Chart("myChart", {
+        type: "line",
+        data: {
+          labels: xValues,
+          datasets: [{
+            data: [15, 11, 9, 8.3, 8, 8, 8.5, 9.2, 11, 15, 13.3, 9.5],
+            borderColor: "#4DCFFF",
+            label: "Sales",
+            backgroundColor: 'rgb(133, 171, 204,0.1)',
+            fill: true,
+
+          }, {
+            data: [10, 13.2, 15, 14, 11.5, 9.7, 9.8, 11.5, 13.6, 13, 10.7, 15],
+            borderColor: "#863BFF",
+            label: "Revenue",
+            backgroundColor: 'rgb(61, 43, 148, 0.3)',
+            fill: true
+          }]
+        },
+        options: {
+          legend: true,
+          responsive: true,
+          scales: {
+            yAxes: [{
+              max: 15,
+              min: 0,
+              ticks: {
+                stepSize: 5,
+                beginAtZero: true,
+                // callback: function (value) { if (value % 1 === 0) { return value; } }
+              }
+            }]
+          },
+          "tooltips": {
+            "enabled": true,
+            "mode": "label",
+            "caretSize": 13,
+            "backgroundColor": "#FC50F9"
+          }
+
+        },
+
+
+
+
+
+
+      });
+
+    </script>
+
+
+    <!-- <script>
+
+
+      var ctx = document.getElementById('myChart').getContext('2d');
+
+
+      const data = {
+        "labels": [
+          "Feb",
+          "Mar",
+          "Apr",
+          "may",
+          "Jun",
+          "Jul",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov",
+          "Dec",
+          ""
+        ],
+        "responsive": true,
+        "datasets": [
+          {
+            "label": "Sales",
+            "backgroundColor": 'rgb(133, 171, 204,0.1)',
+            "fill": true,
+            "data": [
+              "15",
+              "11",
+              "9",
+              "8.3",
+              "8",
+              "8",
+              "8.5",
+              "9.2",
+              "11",
+              "15",
+              "13.3",
+              "9.5"
+            ],
+            "borderColor": "#4DCFFF",
+            "borderWidth": "4"
+          },
+          {
+            "label": "Revenue",
+            "backgroundColor": 'rgb(61, 43, 148, 0.3)',
+            "fill": true,
+            "data": [
+              "10",
+              "13.2",
+              "15",
+              "14",
+              "11.5",
+              "9.7",
+              "9.8",
+              "11.5",
+              "13.6",
+              "13",
+              "10.7",
+              "15"
+            ],
+            "borderColor": "#863BFF",
+            "borderWidth": "4"
+
+          },
+        ]
+      };
+    
+     
+      const options = {
+        "responsive": true,
+        "legend": {
+          "display": true,
+          "fullWidth": true,
+          "position": "top"
+          // "responsive": true
+
+
+
+
+        },
+        "scales": {
+          "yAxes": [
+            {
+              max: 15,
+              min: 0,
+              "ticks": {
+                "stepSize": 5,
+                "beginAtZero": true,
+                "fontSize": 20,
+                "display": true
+              },
+              "gridLines": {
+                "display": true,
+                "lineWidth": 2,
+                "drawOnChartArea": false,
+                "drawTicks": true,
+                "tickMarkLength": 5,
+                "offsetGridLines": true,
+                "zeroLineColor": "#161618",
+                "color": "#161618",
+                "zeroLineWidth": 3
+              },
+              "scaleLabel": {
+                "display": false,
+                "labelString": "USD in Millions"
+              },
+              "display": true
+            }
+          ],
+          "xAxes": {
+            "0": {
+              "ticks": {
+                "display": true,
+                "fontSize": 18,
+                "fontStyle": "normal"
+              },
+              "display": true,
+              "gridLines": {
+                "display": true,
+                "lineWidth": 3,
+                "drawOnChartArea": false,
+                "drawTicks": true,
+                "tickMarkLength": 12,
+                "zeroLineWidth": 4,
+                "offsetGridLines": true,
+                "color": "#161618",
+                "zeroLineColor": "#161618"
+              },
+              "scaleLabel": {
+                "fontSize": 16,
+                "display": true,
+                "fontStyle": "normal"
+              }
+            }
+          }
+        },
+        "tooltips": {
+          "enabled": true,
+          "mode": "label",
+          "caretSize": 13,
+          "backgroundColor": "#FC50F9"
+        }
+      };
+
+      const myChart = new Chart(ctx, {
+        type: 'line',
+        responsive: true,
+        data: data,
+        options: options
+
+      });
+
+
+
+    </script> -->
+
+
+
+    <!-- d -->
+
+
+    <!--  -->
+
+
+
+    <!-- barchart -->
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="background-color: #1F2233;">
+          <div class="modal-header">
+            <span class="mt-4" style="margin-left: 30%;"><img src="adm.png" alt="">
+              <p class="text-center text-white  mt-4 font-weight-bold font-weight-lighter"> Admin</p>
+            </span>
+
+            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-2">
+                <img class="ml-3 mt-2" src="3star.png" width="35" alt="">
+              </div>
+              <div class="col-10">
+                <p class="ml-2 text-white">Manage linked accounts <br> Manage accounts linked to <br> your account</p>
+              </div>
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-2">
+                <img class="ml-3 mt-2" src="3strar2.png" width="35" alt="">
+              </div>
+              <div class="col-10">
+                <p class="ml-2 text-white">Manage authority delegation <br> Manage authority accounts</p>
+              </div>
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-2">
+                <img class="ml-3 mt-2" src="3star3.png" width="35" alt="">
+              </div>
+              <div class="col-10">
+                <p class="ml-2 text-white">Login attempts<br> see recent login attempts for<br>your account</p>
+              </div>
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-2">
+                <img class="ml-3 mt-2" src="3star4.png" width="35" alt="">
+              </div>
+              <div class="col-10">
+                <p class="ml-2 text-white">My settings<br> Change your account settings</p>
+              </div>
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-2">
+                <img class="ml-3 mt-2" src="3star5.png" width="35" alt="">
+              </div>
+              <div class="col-10">
+                <p class="ml-2 text-white">Downloded collected data<br>Download data belongs to <br>your account</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer " style="margin-top: 74%;">
+            <button type="button" class="btn text-white border-white" data-dismiss="modal" style="margin-right: 30%;"><i
+                class="bi bi-power mr-2"></i>LOGOUT</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script> -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+      integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+      crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>

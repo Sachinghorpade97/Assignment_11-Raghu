@@ -1,0 +1,360 @@
+ /* si -------------------------*/
+ .sidebar {
+     margin: 0;
+     padding: 0;
+     width: 100%;
+
+     background-color: #12141F;
+     /* position: fixed; */
+     height: 100%;
+     overflow: auto;
+
+
+ }
+
+ .sidebar a {
+     display: block;
+     color: black;
+     padding: 16px;
+     text-decoration: none;
+ }
+
+ /* .sidebar a.active {
+    background-color: #0095DA;
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #6FCEFB;
+    color: white;
+} */
+
+ @media screen and (max-width: 1450px) {
+     .sidebar {
+         width: 20%;
+         height: auto;
+         position: relative;
+
+         font-size: 10px;
+     }
+ }
+
+ @media screen and (max-width: 700px) {
+     .sidebar {
+         width: 100%;
+         height: auto;
+         position: relative;
+     }
+
+     .sidebar a {
+         float: left;
+     }
+
+     div.content {
+         margin-left: 0;
+     }
+ }
+
+ @media screen and (max-width: 400px) {
+     .sidebar a {
+         text-align: center;
+         float: none;
+     }
+ }
+
+
+ /* ------------------------------------- */
+
+ /* @media only screen and (max-width: 767px) and (min-width: 120px) {
+    .footer {
+        margin-top: 45% !important;
+
+    }
+} */
+
+
+ @media only screen and (max-width: 1450px) and (min-width: 992px) {
+     .foot1 {
+         margin-left: 22% !important;
+
+     }
+ }
+
+ @media only screen and (max-width: 1450px) and (min-width: 992px) {
+     .footer {
+         margin-top: 70% !important;
+
+     }
+ }
+
+
+ /* linecart */
+
+ @media only screen and (max-width: 1325px) and (min-width: 768px) {
+     #myChart {
+         height: 390px !important;
+
+     }
+ }
+
+
+
+
+ /* dCart */
+
+ @media only screen and (max-width: 1560px) and (min-width: 768px) {
+     #myChart11 {
+         margin-left: auto !important;
+
+     }
+ }
+
+
+ @media only screen and (max-width: 1560px) and (min-width: 768px) {
+     .lg {
+         margin-left: 19% !important;
+         margin-top: 6px !important;
+     }
+ }
+
+ @media only screen and (max-width: 371px) and (min-width: 150px) {
+     .lg {
+         margin-left: 15% !important;
+         margin-top: 6px !important;
+     }
+ }
+
+
+
+
+ /* @media only screen and (max-width: 371px) and (min-width: 150px) {
+    .lg {
+        margin-left: 15% !important;
+        margin-top: 6px !important;
+    }
+} */
+
+
+ .modal-dialog {
+     position: fixed;
+     margin: auto;
+     width: 360px;
+     height: 100%;
+     right: 0px;
+ }
+
+
+
+ /*  Toggle Switch  */
+
+ .toggleSwitch span span {
+     display: none;
+ }
+
+ .toggleSwitch {
+     display: inline-block;
+     height: 18px;
+     position: relative;
+     overflow: visible;
+     padding: 0;
+     cursor: pointer;
+     width: 200px;
+     background-color: #12141F;
+     border: 1px solid #A2AAC9;
+     border-radius: 20px;
+     height: 34px;
+ }
+
+ @media only screen and (max-width: 1400px) and (min-width: 992px) {
+    .toggleSwitch {
+        width: 130px !important;
+    }
+}
+
+ .toggleSwitch * {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+ }
+
+ .toggleSwitch label,
+ .toggleSwitch>span {
+     line-height: 20px;
+     height: 20px;
+     vertical-align: middle;
+ }
+
+ .toggleSwitch input:focus~a,
+ .toggleSwitch input:focus+label {
+     outline: none;
+ }
+
+ .toggleSwitch label {
+     position: relative;
+     z-index: 3;
+     display: block;
+     width: 100%;
+ }
+
+ .toggleSwitch input {
+     position: absolute;
+     opacity: 0;
+     z-index: 5;
+ }
+
+ .toggleSwitch>span {
+     position: absolute;
+     left: 0;
+     width: calc(100% - 6px);
+     margin: 0;
+     text-align: left;
+     white-space: nowrap;
+     margin: 0 3px;
+ }
+
+ .toggleSwitch>span span {
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: 5;
+     display: block;
+     width: 50%;
+     margin-left: 50px;
+     text-align: left;
+     font-size: 0.9em;
+     width: auto;
+     left: 0;
+     top: -1px;
+     opacity: 1;
+     width: 40%;
+     text-align: center;
+     line-height: 34px;
+ }
+
+ .toggleSwitch a {
+     position: absolute;
+     right: 50%;
+     z-index: 4;
+     display: block;
+     top: 3px;
+     bottom: 3px;
+     padding: 0;
+     left: 3px;
+     width: 50%;
+     background-color: #666;
+     border-radius: 15px;
+     -webkit-transition: all 0.2s ease-out;
+     -moz-transition: all 0.2s ease-out;
+     transition: all 0.2s ease-out;
+     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+ }
+
+ .toggleSwitch>span span:first-of-type {
+     color: #FFF;
+     opacity: 1;
+     left: 0;
+     margin: 0;
+     width: 50%;
+ }
+
+ .toggleSwitch>span span:last-of-type {
+     left: auto;
+     right: 0;
+     color: #999;
+     margin: 0;
+     width: 50%;
+ }
+
+ .toggleSwitch>span:before {
+     content: '';
+     display: block;
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     left: 0;
+     top: -2px;
+     /* background-color: #fafafa;
+	border: 1px solid #ccc; */
+     border-radius: 30px;
+     -webkit-transition: all 0.2s ease-out;
+     -moz-transition: all 0.2s ease-out;
+     transition: all 0.2s ease-out;
+ }
+
+ .toggleSwitch input:checked~a {
+     left: calc(50% - 3px);
+ }
+
+ .toggleSwitch input:checked~span:before {
+     /* border-color: #0097D1;
+	box-shadow: inset 0 0 0 30px #0097D1; */
+ }
+
+ .toggleSwitch input:checked~span span:first-of-type {
+     left: 0;
+     color: #999;
+ }
+
+ .toggleSwitch input:checked~span span:last-of-type {
+     /* opacity: 1;
+	color: #fff;	 */
+     color: #FFF;
+ }
+
+ /* Switch Sizes */
+ .toggleSwitch.large {
+     width: 60px;
+     height: 27px;
+ }
+
+ .toggleSwitch.large a {
+     width: 27px;
+ }
+
+ .toggleSwitch.large>span {
+     height: 29px;
+     line-height: 28px;
+ }
+
+ .toggleSwitch.large input:checked~a {
+     left: 41px;
+ }
+
+ .toggleSwitch.large>span span {
+     font-size: 1.1em;
+ }
+
+ .toggleSwitch.large>span span:first-of-type {
+     left: 50%;
+ }
+
+ .toggleSwitch.xlarge {
+     width: 80px;
+     height: 36px;
+ }
+
+ .toggleSwitch.xlarge a {
+     width: 36px;
+ }
+
+ .toggleSwitch.xlarge>span {
+     height: 38px;
+     line-height: 37px;
+ }
+
+ .toggleSwitch.xlarge input:checked~a {
+     left: 52px;
+ }
+
+ .toggleSwitch.xlarge>span span {
+     font-size: 1.4em;
+ }
+
+ .toggleSwitch.xlarge>span span:first-of-type {
+     left: 50%;
+ }
+
+ /*  End Toggle Switch  */
+
+ 
+

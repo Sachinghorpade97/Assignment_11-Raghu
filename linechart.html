@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- font awesome -->
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+
+    <title>Ass-11</title>
+    <!-- <link rel="stylesheet" href="./11Ass.css"> -->
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col-6">
+                <canvas id="myChart" height="90" width="" ></canvas>
+            </div>
+
+            <div class="col-6">
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var data = {
+            "labels": [
+                "Feb",
+                "Mar",
+                "Apr",
+                "may",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Oct",
+                "Nov",
+                "Dec",
+                ""
+            ],
+            "datasets": [
+                {
+                    "label": "Sales",
+                    "backgroundColor": 'rgb(133, 171, 204,0.1)',
+                    "fill": true,
+                    "data": [
+                        "15",
+                        "11",
+                        "9",
+                        "8.3",
+                        "8",
+                        "8",
+                        "8.5",
+                        "9.2",
+                        "11",
+                        "15",
+                        "13.3",
+                        "9.5"
+                    ],
+                    "borderColor": "#4DCFFF",
+                    "borderWidth": "4"
+                },
+                {
+                    "label": "Revenue",
+                    "backgroundColor": 'rgb(61, 43, 148, 0.3)',
+                    "fill": true,
+                    "data": [
+                        "10",
+                        "13.2",
+                        "15",
+                        "14",
+                        "11.5",
+                        "9.7",
+                        "9.8",
+                        "11.5",
+                        "13.6",
+                        "13",
+                        "10.7",
+                        "15"
+                    ],
+                    "borderColor": "#863BFF",
+                    "borderWidth": "4"
+                },
+            ]
+        };
+        var options = {
+
+            "legend": {
+                "display": true,
+                "fullWidth": true,
+                "position": "top",
+                "responsive": true
+               
+                
+
+
+            },
+            "scales": {
+                "yAxes": [
+                    {
+                        max: 15,
+                        min: 0,
+                        "ticks": {
+                            "stepSize": 5,
+                            "beginAtZero": true,
+                            "fontSize": 20,
+                            "display": true
+                        },
+                        "gridLines": {
+                            "display": true,
+                            "lineWidth": 2,
+                            "drawOnChartArea": false,
+                            "drawTicks": true,
+                            "tickMarkLength": 5,
+                            "offsetGridLines": true,
+                            "zeroLineColor": "#161618",
+                            "color": "#161618",
+                            "zeroLineWidth": 3
+                        },
+                        "scaleLabel": {
+                            "display": false,
+                            "labelString": "USD in Millions"
+                        },
+                        "display": true
+                    }
+                ],
+                "xAxes": {
+                    "0": {
+                        "ticks": {
+                            "display": true,
+                            "fontSize": 18,
+                            "fontStyle": "normal"
+                        },
+                        "display": true,
+                        "gridLines": {
+                            "display": true,
+                            "lineWidth": 3,
+                            "drawOnChartArea": false,
+                            "drawTicks": true,
+                            "tickMarkLength": 12,
+                            "zeroLineWidth": 4,
+                            "offsetGridLines": true,
+                            "color": "#161618",
+                            "zeroLineColor": "#161618"
+                        },
+                        "scaleLabel": {
+                            "fontSize": 16,
+                            "display": true,
+                            "fontStyle": "normal"
+                        }
+                    }
+                }
+            },
+            "tooltips": {
+                "enabled": true,
+                "mode": "label",
+                "caretSize": 13,
+                "backgroundColor": "#FC50F9"
+            }
+        };
+
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: data,
+            options: options
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script> -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
